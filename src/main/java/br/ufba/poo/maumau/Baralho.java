@@ -1,5 +1,8 @@
 package br.ufba.poo.maumau;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Baralho {
 	private Carta[] cartas = new Carta[52];
 	
@@ -16,5 +19,9 @@ public class Baralho {
 	
 	public Carta getCartaNaPosicao(int pos) {
 		return cartas[pos];
+	}
+	
+	public Carta[] getCartas() { 
+		return cartas.clone();
 	}
 }

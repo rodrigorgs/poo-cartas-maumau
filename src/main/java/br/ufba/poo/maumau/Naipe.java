@@ -12,6 +12,14 @@ public enum Naipe {
     	this.representacao = representacao;
     }
     
+    public CorNaipe getCor() {
+    	if (this == PAUS || this == ESPADAS) {
+    		return CorNaipe.PRETO;
+    	} else {
+    		return CorNaipe.VERMELHO;
+    	}
+    }
+    
     @Override
     public String toString() {
     	return representacao;
